@@ -1,0 +1,16 @@
+# CODEOWNERS文件 - 用于保护敏感文件和目录
+# 此文件定义了受保护的文件和目录，修改这些文件必须通过CODEOWNERS审查
+
+# 保护POINT目录，只允许审核委员修改（用于积分管理）
+.github/POINT/ @ZelaCreator/reviewers
+
+# 保护角色定义文件，只允许所有者修改
+.github/reviewers.txt @ZelaCreator/administrators
+.github/maintainers.txt @ZelaCreator/administrators
+.github/directors.txt @ZelaCreator/administrators
+
+# 保护CODEOWNERS本身，防止被恶意修改
+.github/CODEOWNERS @ZelaCreator/administrators
+
+# 保护Actions工作流，只允许所有者修改
+.github/workflows/ @ZelaCreator/administrators
